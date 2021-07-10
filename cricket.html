@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field {
+
+            border: 1px solid;
+        }
+
+        .ball {
+
+            position: relative;
+            left: -540px;
+            width: 60px;
+            height: 50px;
+            transition: transform 1s ease-out .2s;
+
+        }
+
+        .field:hover .ball {
+            transform: translate(580px, -250px);
+        }
+
+        .man {
+            position: relative;
+            left: 800px;
+            transition: transform 1s ease-out 0.4s;
+        }
+
+        .field:hover .man {
+            transform: translate(-314px, -48px);
+        }
+
+        .bat {
+            transition: transform 0.2s ease-in;
+        }
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+
+        <img class="bat" src="image/bat.png" alt="cricket bat">
+        <img class="man" src="image/man.png" alt="">
+        <img class="ball" src="image/ball.png" alt="">
+
+
+    </div>
+</body>
+
+</html>
